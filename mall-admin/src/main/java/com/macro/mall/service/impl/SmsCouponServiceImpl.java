@@ -104,19 +104,19 @@ public class SmsCouponServiceImpl implements SmsCouponService {
         return count;
     }
 
-    @Override
-    public List<SmsCoupon> list(String name, Integer type, Integer pageSize, Integer pageNum) {
-        SmsCouponExample example = new SmsCouponExample();
-        SmsCouponExample.Criteria criteria = example.createCriteria();
-        if(!StringUtils.isEmpty(name)){
-            criteria.andNameLike("%"+name+"%");
-        }
-        if(type!=null){
-            criteria.andTypeEqualTo(type);
-        }
-        PageHelper.startPage(pageNum,pageSize);
-        return couponMapper.selectByExample(example);
-    }
+//    @Override
+//    public List<SmsCoupon> list(String name, Integer type, Integer pageSize, Integer pageNum) {
+//        SmsCouponExample example = new SmsCouponExample();
+//        SmsCouponExample.Criteria criteria = example.createCriteria();
+//        if(!StringUtils.isEmpty(name)){
+//            criteria.andNameLike("%"+name+"%");
+//        }
+//        if(type!=null){
+//            criteria.andTypeEqualTo(type);
+//        }
+//        PageHelper.startPage(pageNum,pageSize);
+//        return couponMapper.selectByExample(example);
+//    }
 
     @Override
     public SmsCouponParam getItem(Long id) {

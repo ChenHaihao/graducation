@@ -8,13 +8,13 @@ import org.apache.ibatis.annotations.Param;
 public interface PmsBrandMapper {
     long countByExample(PmsBrandExample example);
 
-    int deleteByExample(PmsBrandExample example);
+//    int deleteByExample(PmsBrandExample example);
 
-    int deleteByPrimaryKey(Long id);
+//    int deleteByPrimaryKey(Long id);
 
     int insert(PmsBrand record);
 
-    int insertSelective(PmsBrand record);
+//    int insertSelective(PmsBrand record);
 
     List<PmsBrand> selectByExampleWithBLOBs(PmsBrandExample example);
 
@@ -28,7 +28,7 @@ public interface PmsBrandMapper {
 
     int updateByExample(@Param("record") PmsBrand record, @Param("example") PmsBrandExample example);
 
-    int updateByPrimaryKeySelective(PmsBrand record);
+//    int updateByPrimaryKeySelective(PmsBrand record);
 
     int updateByPrimaryKeyWithBLOBs(PmsBrand record);
 

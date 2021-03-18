@@ -9,10 +9,10 @@ import java.util.List;
  * Created by macro on 2018/10/17.
  */
 public interface OmsOrderReturnReasonService {
-    /**
-     * 添加退货原因
-     */
-    int create(OmsOrderReturnReason returnReason);
+//    /**
+//     * 添加退货原因
+//     */
+//    int create(OmsOrderReturnReason returnReason);
 
     /**
      * 修改退货原因
@@ -24,10 +24,10 @@ public interface OmsOrderReturnReasonService {
      */
     int delete(List<Long> ids);
 
-    /**
-     * 分页获取退货原因
-     */
-    List<OmsOrderReturnReason> list(Integer pageSize, Integer pageNum);
+//    /**
+//     * 分页获取退货原因
+//     */
+//    List<OmsOrderReturnReason> list(Integer pageSize, Integer pageNum);
 
     /**
      * 批量修改退货原因状态

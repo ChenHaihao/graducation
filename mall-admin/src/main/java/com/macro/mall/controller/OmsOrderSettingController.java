@@ -20,22 +20,22 @@ public class OmsOrderSettingController {
     @Autowired
     private OmsOrderSettingService orderSettingService;
 
-    @ApiOperation("获取指定订单设置")
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    @ResponseBody
-    public CommonResult<OmsOrderSetting> getItem(@PathVariable Long id) {
-        OmsOrderSetting orderSetting = orderSettingService.getItem(id);
-        return CommonResult.success(orderSetting);
-    }
-
-    @ApiOperation("修改指定订单设置")
-    @RequestMapping(value = "/update/{id}", method = RequestMethod.POST)
-    @ResponseBody
-    public CommonResult update(@PathVariable Long id, @RequestBody OmsOrderSetting orderSetting) {
-        int count = orderSettingService.update(id,orderSetting);
-        if(count>0){
-            return CommonResult.success(count);
-        }
-        return CommonResult.failed();
-    }
+//    @ApiOperation("获取指定订单设置")
+//    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+//    @ResponseBody
+//    public CommonResult<OmsOrderSetting> getItem(@PathVariable Long id) {
+//        OmsOrderSetting orderSetting = orderSettingService.getItem(id);
+//        return CommonResult.success(orderSetting);
+//    }
+//
+//    @ApiOperation("修改指定订单设置")
+//    @RequestMapping(value = "/update/{id}", method = RequestMethod.POST)
+//    @ResponseBody
+//    public CommonResult update(@PathVariable Long id, @RequestBody OmsOrderSetting orderSetting) {
+//        int count = orderSettingService.update(id,orderSetting);
+//        if(count>0){
+//            return CommonResult.success(count);
+//        }
+//        return CommonResult.failed();
+//    }
 }

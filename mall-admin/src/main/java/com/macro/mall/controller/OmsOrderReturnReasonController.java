@@ -23,16 +23,16 @@ public class OmsOrderReturnReasonController {
     @Autowired
     private OmsOrderReturnReasonService orderReturnReasonService;
 
-    @ApiOperation("添加退货原因")
-    @RequestMapping(value = "/create", method = RequestMethod.POST)
-    @ResponseBody
-    public CommonResult create(@RequestBody OmsOrderReturnReason returnReason) {
-        int count = orderReturnReasonService.create(returnReason);
-        if (count > 0) {
-            return CommonResult.success(count);
-        }
-        return CommonResult.failed();
-    }
+//    @ApiOperation("添加退货原因")
+//    @RequestMapping(value = "/create", method = RequestMethod.POST)
+//    @ResponseBody
+//    public CommonResult create(@RequestBody OmsOrderReturnReason returnReason) {
+//        int count = orderReturnReasonService.create(returnReason);
+//        if (count > 0) {
+//            return CommonResult.success(count);
+//        }
+//        return CommonResult.failed();
+//    }
 
     @ApiOperation("修改退货原因")
     @RequestMapping(value = "/update/{id}", method = RequestMethod.POST)
@@ -56,14 +56,14 @@ public class OmsOrderReturnReasonController {
         return CommonResult.failed();
     }
 
-    @ApiOperation("分页查询全部退货原因")
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
-    @ResponseBody
-    public CommonResult<CommonPage<OmsOrderReturnReason>> list(@RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize,
-                                                               @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum) {
-        List<OmsOrderReturnReason> reasonList = orderReturnReasonService.list(pageSize, pageNum);
-        return CommonResult.success(CommonPage.restPage(reasonList));
-    }
+//    @ApiOperation("分页查询全部退货原因")
+//    @RequestMapping(value = "/list", method = RequestMethod.GET)
+//    @ResponseBody
+//    public CommonResult<CommonPage<OmsOrderReturnReason>> list(@RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize,
+//                                                               @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum) {
+//        List<OmsOrderReturnReason> reasonList = orderReturnReasonService.list(pageSize, pageNum);
+//        return CommonResult.success(CommonPage.restPage(reasonList));
+//    }
 
     @ApiOperation("获取单个退货原因详情信息")
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

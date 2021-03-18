@@ -12,7 +12,7 @@ public interface OmsCartItemMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(OmsCartItem record);
+//    int insert(OmsCartItem record);
 
     int insertSelective(OmsCartItem record);
 
@@ -20,11 +20,11 @@ public interface OmsCartItemMapper {
 
     OmsCartItem selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") OmsCartItem record, @Param("example") OmsCartItemExample example);
+//    int updateByExampleSelective(@Param("record") OmsCartItem record, @Param("example") OmsCartItemExample example);
 
     int updateByExample(@Param("record") OmsCartItem record, @Param("example") OmsCartItemExample example);
 
-    int updateByPrimaryKeySelective(OmsCartItem record);
+//    int updateByPrimaryKeySelective(OmsCartItem record);
 
-    int updateByPrimaryKey(OmsCartItem record);
+//    int updateByPrimaryKey(OmsCartItem record);
 }

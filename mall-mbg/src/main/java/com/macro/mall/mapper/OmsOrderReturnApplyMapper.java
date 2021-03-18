@@ -8,11 +8,11 @@ import org.apache.ibatis.annotations.Param;
 public interface OmsOrderReturnApplyMapper {
     long countByExample(OmsOrderReturnApplyExample example);
 
-    int deleteByExample(OmsOrderReturnApplyExample example);
+//    int deleteByExample(OmsOrderReturnApplyExample example);
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(OmsOrderReturnApply record);
+//    int insert(OmsOrderReturnApply record);
 
     int insertSelective(OmsOrderReturnApply record);
 
@@ -24,7 +24,7 @@ public interface OmsOrderReturnApplyMapper {
 
     int updateByExample(@Param("record") OmsOrderReturnApply record, @Param("example") OmsOrderReturnApplyExample example);
 
-    int updateByPrimaryKeySelective(OmsOrderReturnApply record);
+//    int updateByPrimaryKeySelective(OmsOrderReturnApply record);
 
     int updateByPrimaryKey(OmsOrderReturnApply record);
 }

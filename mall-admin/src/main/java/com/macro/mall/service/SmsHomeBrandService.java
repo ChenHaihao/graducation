@@ -31,8 +31,8 @@ public interface SmsHomeBrandService {
      */
     int updateRecommendStatus(List<Long> ids, Integer recommendStatus);
 
-    /**
-     * 分页查询品牌推荐
-     */
-    List<SmsHomeBrand> list(String brandName, Integer recommendStatus, Integer pageSize, Integer pageNum);
+//    /**
+//     * 分页查询品牌推荐
+//     */
+//    List<SmsHomeBrand> list(String brandName, Integer recommendStatus, Integer pageSize, Integer pageNum);
 }

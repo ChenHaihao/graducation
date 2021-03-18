@@ -11,10 +11,10 @@ import java.util.List;
  * Created by macro on 2018/10/11.
  */
 public interface OmsOrderService {
-    /**
-     * 订单查询
-     */
-    List<OmsOrder> list(OmsOrderQueryParam queryParam, Integer pageSize, Integer pageNum);
+//    /**
+//     * 订单查询
+//     */
+//    List<OmsOrder> list(OmsOrderQueryParam queryParam, Integer pageSize, Integer pageNum);
 
     /**
      * 批量发货

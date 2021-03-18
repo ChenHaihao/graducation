@@ -16,9 +16,9 @@ public interface OmsOrderSettingMapper {
 
     int insertSelective(OmsOrderSetting record);
 
-    List<OmsOrderSetting> selectByExample(OmsOrderSettingExample example);
+//    List<OmsOrderSetting> selectByExample(OmsOrderSettingExample example);
 
-    OmsOrderSetting selectByPrimaryKey(Long id);
+//    OmsOrderSetting selectByPrimaryKey(Long id);
 
     int updateByExampleSelective(@Param("record") OmsOrderSetting record, @Param("example") OmsOrderSettingExample example);
 
@@ -26,5 +26,5 @@ public interface OmsOrderSettingMapper {
 
     int updateByPrimaryKeySelective(OmsOrderSetting record);
 
-    int updateByPrimaryKey(OmsOrderSetting record);
+//    int updateByPrimaryKey(OmsOrderSetting record);
 }

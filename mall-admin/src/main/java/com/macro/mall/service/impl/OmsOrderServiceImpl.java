@@ -32,11 +32,11 @@ public class OmsOrderServiceImpl implements OmsOrderService {
     @Autowired
     private OmsOrderOperateHistoryMapper orderOperateHistoryMapper;
 
-    @Override
-    public List<OmsOrder> list(OmsOrderQueryParam queryParam, Integer pageSize, Integer pageNum) {
-        PageHelper.startPage(pageNum, pageSize);
-        return orderDao.getList(queryParam);
-    }
+//    @Override
+//    public List<OmsOrder> list(OmsOrderQueryParam queryParam, Integer pageSize, Integer pageNum) {
+//        PageHelper.startPage(pageNum, pageSize);
+//        return orderDao.getList(queryParam);
+//    }
 
     @Override
     public int delivery(List<OmsOrderDeliveryParam> deliveryParamList) {

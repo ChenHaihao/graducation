@@ -16,7 +16,7 @@ public interface SmsHomeBrandMapper {
 
     int insertSelective(SmsHomeBrand record);
 
-    List<SmsHomeBrand> selectByExample(SmsHomeBrandExample example);
+//    List<SmsHomeBrand> selectByExample(SmsHomeBrandExample example);
 
     SmsHomeBrand selectByPrimaryKey(Long id);
 

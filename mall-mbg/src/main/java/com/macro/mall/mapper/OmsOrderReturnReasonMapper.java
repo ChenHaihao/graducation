@@ -16,7 +16,7 @@ public interface OmsOrderReturnReasonMapper {
 
     int insertSelective(OmsOrderReturnReason record);
 
-    List<OmsOrderReturnReason> selectByExample(OmsOrderReturnReasonExample example);
+//    List<OmsOrderReturnReason> selectByExample(OmsOrderReturnReasonExample example);
 
     OmsOrderReturnReason selectByPrimaryKey(Long id);
 

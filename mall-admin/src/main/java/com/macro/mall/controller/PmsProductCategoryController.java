@@ -52,15 +52,15 @@ public class PmsProductCategoryController {
         }
     }
 
-    @ApiOperation("分页查询商品分类")
-    @RequestMapping(value = "/list/{parentId}", method = RequestMethod.GET)
-    @ResponseBody
-    public CommonResult<CommonPage<PmsProductCategory>> getList(@PathVariable Long parentId,
-                                                                @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize,
-                                                                @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum) {
-        List<PmsProductCategory> productCategoryList = productCategoryService.getList(parentId, pageSize, pageNum);
-        return CommonResult.success(CommonPage.restPage(productCategoryList));
-    }
+//    @ApiOperation("分页查询商品分类")
+//    @RequestMapping(value = "/list/{parentId}", method = RequestMethod.GET)
+//    @ResponseBody
+//    public CommonResult<CommonPage<PmsProductCategory>> getList(@PathVariable Long parentId,
+//                                                                @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize,
+//                                                                @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum) {
+//        List<PmsProductCategory> productCategoryList = productCategoryService.getList(parentId, pageSize, pageNum);
+//        return CommonResult.success(CommonPage.restPage(productCategoryList));
+//    }
 
     @ApiOperation("根据id获取商品分类")
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

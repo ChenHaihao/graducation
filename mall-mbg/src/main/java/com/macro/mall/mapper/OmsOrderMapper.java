@@ -12,7 +12,7 @@ public interface OmsOrderMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(OmsOrder record);
+//    int insert(OmsOrder record);
 
     int insertSelective(OmsOrder record);
 
@@ -26,5 +26,5 @@ public interface OmsOrderMapper {
 
     int updateByPrimaryKeySelective(OmsOrder record);
 
-    int updateByPrimaryKey(OmsOrder record);
+//    int updateByPrimaryKey(OmsOrder record);
 }

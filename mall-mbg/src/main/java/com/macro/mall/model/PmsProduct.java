@@ -58,8 +58,8 @@ public class PmsProduct implements Serializable {
     @ApiModelProperty(value = "限制使用的积分数")
     private Integer usePointLimit;
 
-    @ApiModelProperty(value = "副标题")
-    private String subTitle;
+//    @ApiModelProperty(value = "副标题")
+//    private String subTitle;
 
     @ApiModelProperty(value = "市场价")
     private BigDecimal originalPrice;
@@ -282,13 +282,13 @@ public class PmsProduct implements Serializable {
         this.usePointLimit = usePointLimit;
     }
 
-    public String getSubTitle() {
-        return subTitle;
-    }
-
-    public void setSubTitle(String subTitle) {
-        this.subTitle = subTitle;
-    }
+//    public String getSubTitle() {
+//        return subTitle;
+//    }
+//
+//    public void setSubTitle(String subTitle) {
+//        this.subTitle = subTitle;
+//    }
 
     public BigDecimal getOriginalPrice() {
         return originalPrice;
@@ -484,7 +484,7 @@ public class PmsProduct implements Serializable {
         sb.append(", giftGrowth=").append(giftGrowth);
         sb.append(", giftPoint=").append(giftPoint);
         sb.append(", usePointLimit=").append(usePointLimit);
-        sb.append(", subTitle=").append(subTitle);
+//        sb.append(", subTitle=").append(subTitle);
         sb.append(", originalPrice=").append(originalPrice);
         sb.append(", stock=").append(stock);
         sb.append(", lowStock=").append(lowStock);

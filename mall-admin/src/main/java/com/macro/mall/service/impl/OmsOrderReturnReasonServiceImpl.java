@@ -19,11 +19,11 @@ import java.util.List;
 public class OmsOrderReturnReasonServiceImpl implements OmsOrderReturnReasonService {
     @Autowired
     private OmsOrderReturnReasonMapper returnReasonMapper;
-    @Override
-    public int create(OmsOrderReturnReason returnReason) {
-        returnReason.setCreateTime(new Date());
-        return returnReasonMapper.insert(returnReason);
-    }
+//    @Override
+//    public int create(OmsOrderReturnReason returnReason) {
+//        returnReason.setCreateTime(new Date());
+//        return returnReasonMapper.insert(returnReason);
+//    }
 
     @Override
     public int update(Long id, OmsOrderReturnReason returnReason) {
@@ -38,13 +38,13 @@ public class OmsOrderReturnReasonServiceImpl implements OmsOrderReturnReasonServ
         return returnReasonMapper.deleteByExample(example);
     }
 
-    @Override
-    public List<OmsOrderReturnReason> list(Integer pageSize, Integer pageNum) {
-        PageHelper.startPage(pageNum,pageSize);
-        OmsOrderReturnReasonExample example = new OmsOrderReturnReasonExample();
-        example.setOrderByClause("sort desc");
-        return returnReasonMapper.selectByExample(example);
-    }
+//    @Override
+//    public List<OmsOrderReturnReason> list(Integer pageSize, Integer pageNum) {
+//        PageHelper.startPage(pageNum,pageSize);
+//        OmsOrderReturnReasonExample example = new OmsOrderReturnReasonExample();
+//        example.setOrderByClause("sort desc");
+//        return returnReasonMapper.selectByExample(example);
+//    }
 
     @Override
     public int updateStatus(List<Long> ids, Integer status) {

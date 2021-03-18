@@ -51,13 +51,13 @@ public class SmsFlashPromotionServiceImpl implements SmsFlashPromotionService {
         return flashPromotionMapper.selectByPrimaryKey(id);
     }
 
-    @Override
-    public List<SmsFlashPromotion> list(String keyword, Integer pageSize, Integer pageNum) {
-        PageHelper.startPage(pageNum, pageSize);
-        SmsFlashPromotionExample example = new SmsFlashPromotionExample();
-        if (!StringUtils.isEmpty(keyword)) {
-            example.createCriteria().andTitleLike("%" + keyword + "%");
-        }
-        return flashPromotionMapper.selectByExample(example);
-    }
+//    @Override
+//    public List<SmsFlashPromotion> list(String keyword, Integer pageSize, Integer pageNum) {
+//        PageHelper.startPage(pageNum, pageSize);
+//        SmsFlashPromotionExample example = new SmsFlashPromotionExample();
+//        if (!StringUtils.isEmpty(keyword)) {
+//            example.createCriteria().andTitleLike("%" + keyword + "%");
+//        }
+//        return flashPromotionMapper.selectByExample(example);
+//    }
 }

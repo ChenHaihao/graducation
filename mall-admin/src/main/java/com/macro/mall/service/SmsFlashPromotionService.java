@@ -34,8 +34,8 @@ public interface SmsFlashPromotionService {
      */
     SmsFlashPromotion getItem(Long id);
 
-    /**
-     * 分页查询活动
-     */
-    List<SmsFlashPromotion> list(String keyword, Integer pageSize, Integer pageNum);
+//    /**
+//     * 分页查询活动
+//     */
+//    List<SmsFlashPromotion> list(String keyword, Integer pageSize, Integer pageNum);
 }

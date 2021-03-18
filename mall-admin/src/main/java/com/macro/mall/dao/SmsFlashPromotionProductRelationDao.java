@@ -10,8 +10,8 @@ import java.util.List;
  * Created by macro on 2018/11/16.
  */
 public interface SmsFlashPromotionProductRelationDao {
-    /**
-     * 获取限时购及相关商品信息
-     */
-    List<SmsFlashPromotionProduct> getList(@Param("flashPromotionId") Long flashPromotionId, @Param("flashPromotionSessionId") Long flashPromotionSessionId);
+//    /**
+//     * 获取限时购及相关商品信息
+//     */
+//    List<SmsFlashPromotionProduct> getList(@Param("flashPromotionId") Long flashPromotionId, @Param("flashPromotionSessionId") Long flashPromotionSessionId);
 }

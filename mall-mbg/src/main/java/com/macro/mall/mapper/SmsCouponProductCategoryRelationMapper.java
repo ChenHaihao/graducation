@@ -16,7 +16,7 @@ public interface SmsCouponProductCategoryRelationMapper {
 
     int insertSelective(SmsCouponProductCategoryRelation record);
 
-    List<SmsCouponProductCategoryRelation> selectByExample(SmsCouponProductCategoryRelationExample example);
+//    List<SmsCouponProductCategoryRelation> selectByExample(SmsCouponProductCategoryRelationExample example);
 
     SmsCouponProductCategoryRelation selectByPrimaryKey(Long id);
 

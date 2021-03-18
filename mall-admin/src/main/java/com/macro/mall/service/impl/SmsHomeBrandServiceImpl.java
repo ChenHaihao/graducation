@@ -53,18 +53,18 @@ public class SmsHomeBrandServiceImpl implements SmsHomeBrandService {
         return homeBrandMapper.updateByExampleSelective(record,example);
     }
 
-    @Override
-    public List<SmsHomeBrand> list(String brandName, Integer recommendStatus, Integer pageSize, Integer pageNum) {
-        PageHelper.startPage(pageNum,pageSize);
-        SmsHomeBrandExample example = new SmsHomeBrandExample();
-        SmsHomeBrandExample.Criteria criteria = example.createCriteria();
-        if(!StringUtils.isEmpty(brandName)){
-            criteria.andBrandNameLike("%"+brandName+"%");
-        }
-        if(recommendStatus!=null){
-            criteria.andRecommendStatusEqualTo(recommendStatus);
-        }
-        example.setOrderByClause("sort desc");
-        return homeBrandMapper.selectByExample(example);
-    }
+//    @Override
+//    public List<SmsHomeBrand> list(String brandName, Integer recommendStatus, Integer pageSize, Integer pageNum) {
+//        PageHelper.startPage(pageNum,pageSize);
+//        SmsHomeBrandExample example = new SmsHomeBrandExample();
+//        SmsHomeBrandExample.Criteria criteria = example.createCriteria();
+//        if(!StringUtils.isEmpty(brandName)){
+//            criteria.andBrandNameLike("%"+brandName+"%");
+//        }
+//        if(recommendStatus!=null){
+//            criteria.andRecommendStatusEqualTo(recommendStatus);
+//        }
+//        example.setOrderByClause("sort desc");
+//        return homeBrandMapper.selectByExample(example);
+//    }
 }

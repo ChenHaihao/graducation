@@ -16,9 +16,9 @@ public interface SmsCouponMapper {
 
     int insertSelective(SmsCoupon record);
 
-    List<SmsCoupon> selectByExample(SmsCouponExample example);
+//    List<SmsCoupon> selectByExample(SmsCouponExample example);
 
-    SmsCoupon selectByPrimaryKey(Long id);
+//    SmsCoupon selectByPrimaryKey(Long id);
 
     int updateByExampleSelective(@Param("record") SmsCoupon record, @Param("example") SmsCouponExample example);
 
