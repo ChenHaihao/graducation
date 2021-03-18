@@ -23,14 +23,14 @@ public class OmsPortalOrderReturnApplyController {
     @Autowired
     private OmsPortalOrderReturnApplyService returnApplyService;
 
-    @ApiOperation("申请退货")
-    @RequestMapping(value = "/create", method = RequestMethod.POST)
-    @ResponseBody
-    public CommonResult create(@RequestBody OmsOrderReturnApplyParam returnApply) {
-        int count = returnApplyService.create(returnApply);
-        if (count > 0) {
-            return CommonResult.success(count);
-        }
-        return CommonResult.failed();
-    }
+//    @ApiOperation("申请退货")
+//    @RequestMapping(value = "/create", method = RequestMethod.POST)
+//    @ResponseBody
+//    public CommonResult create(@RequestBody OmsOrderReturnApplyParam returnApply) {
+//        int count = returnApplyService.create(returnApply);
+//        if (count > 0) {
+//            return CommonResult.success(count);
+//        }
+//        return CommonResult.failed();
+//    }
 }

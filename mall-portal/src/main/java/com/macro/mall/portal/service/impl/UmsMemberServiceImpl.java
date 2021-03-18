@@ -135,13 +135,13 @@ public class UmsMemberServiceImpl implements UmsMemberService {
         memberCacheService.delMember(umsMember.getId());
     }
 
-    @Override
-    public UmsMember getCurrentMember() {
-        SecurityContext ctx = SecurityContextHolder.getContext();
-        Authentication auth = ctx.getAuthentication();
-        MemberDetails memberDetails = (MemberDetails) auth.getPrincipal();
-        return memberDetails.getUmsMember();
-    }
+//    @Override
+//    public UmsMember getCurrentMember() {
+//        SecurityContext ctx = SecurityContextHolder.getContext();
+//        Authentication auth = ctx.getAuthentication();
+//        MemberDetails memberDetails = (MemberDetails) auth.getPrincipal();
+//        return memberDetails.getUmsMember();
+//    }
 
     @Override
     public void updateIntegration(Long id, Integer integration) {
